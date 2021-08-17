@@ -1,5 +1,5 @@
 <template>
-  <b-modal id="modal-center" size="lg" centered title="Add Employee">
+  <b-modal id="AddEmployee" size="lg" centered title="Add Employee">
     <p class="md-1"><b>Employee Name</b>
       <b-input />
 </p>

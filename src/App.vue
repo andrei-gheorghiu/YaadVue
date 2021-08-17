@@ -15,6 +15,7 @@
     </b-modal>
     <bank-transfer/>
     <add-recipe />
+    <add-employee />
     <new-reconciliation />
     <sidebar-right />
     <sale-switch/>
@@ -49,9 +50,10 @@ import Utility from './components/Utility.vue';
 import Ingredients from './components/Ingredients.vue';
 import AddChartAccounts from './components/AddChartAccounts';
 import PayrollYearHoliday from './components/PayrollYearHoliday.vue';
+import AddEmployee from './components/AddEmployee.vue';
 
 export default {
-  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday }
+  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee }
 };
 </script>,
     ChangeDue

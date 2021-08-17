@@ -26,7 +26,7 @@
           <b-col class="text-right"> </b-col>
         </b-row>
       </b-col>
-      </b-row>
+          </b-row>
       <b-row >
         <b-col class="text-right mr-4" style="color:red font-size: 0.8rem">
         <b><i>Net profit: $1,000,000.00</i></b>
