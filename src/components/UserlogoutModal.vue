@@ -1,8 +1,11 @@
 <template>
 
 <b-modal id="UserlogoutModal" size="sm" centered hide-footer title="Logout">
-    <div class="modal-header"><h4>Logout <i class="fa fa-lock"></i></h4></div>
-    Are you sure you want to log-off?</b-modal>
+      Are you sure you want to log-off?
+
+      <b-button class="mt-4" block variant="info">Logout</b-button>
+      </b-modal>
+
 </template>
 <script>
 export default {
