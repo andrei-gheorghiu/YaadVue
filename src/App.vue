@@ -28,6 +28,7 @@
     <utility/>
      <ingredients/>
       <payroll-year-holiday/>
+      <userlogout-modal/>
 
   </div>
 </template>
@@ -51,9 +52,10 @@ import Ingredients from './components/Ingredients.vue';
 import AddChartAccounts from './components/AddChartAccounts';
 import PayrollYearHoliday from './components/PayrollYearHoliday.vue';
 import AddEmployee from './components/AddEmployee.vue';
+import UserlogoutModal from './components/UserlogoutModal.vue';
 
 export default {
-  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee }
+  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee, UserlogoutModal }
 };
 </script>,
     ChangeDue

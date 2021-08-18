@@ -8,7 +8,7 @@ export default {
     { name: 'Notification', icon: 'BellIcon' },
     { name: 'Message', icon: 'MessageSquareIcon' },
     null,
-    { name: 'Logout', icon: 'LogOutIcon' },
+    { name: 'Logout', icon: 'LogOutIcon', modalTarget: 'UserlogoutModal' },
     null,
     { name: 'Lock', icon: 'LockIcon' }
   ]
