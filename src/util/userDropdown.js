@@ -10,6 +10,6 @@ export default {
     null,
     { name: 'Logout', icon: 'LogOutIcon', modalTarget: 'UserlogoutModal' },
     null,
-    { name: 'Lock', icon: 'LockIcon' }
+    { name: 'Lock', icon: 'LockIcon', modalTarget: 'UserlockModal' }
   ]
 };
