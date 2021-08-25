@@ -3,7 +3,7 @@ export default {
   icon: 'UserIcon',
   expanded: true,
   items: [
-    { name: 'Settings', icon: 'SettingsIcon' },
+    { name: 'Profile', icon: 'UserIcon' },
     null,
     { name: 'Notification', icon: 'BellIcon' },
     { name: 'Message', icon: 'MessageSquareIcon' },

@@ -1,7 +1,7 @@
 <template>
 
-<b-modal id="UserlockModal" size="sm" centered hide-footer title="Lock">
-    <template #modal-title> Lock<b-btn v-b-modal.OverrideModal variant="transparent" v-b-tooltip.hover title="override"><font-awesome-icon size="1x" :icon="['fas', 'lock']"/></b-btn></template>
+<b-modal id="OverrideModal" size="sm" centered hide-footer title="Lock">
+    <template #modal-title> Override <font-awesome-icon size="1x" :icon="['fas', 'key']"/></template>
 
   <b-input-group class="mb-4 mt-2">
     <b-input-group-prepend is-text>
@@ -17,13 +17,13 @@
     <b-form-input aria-label="Passwordfield"></b-form-input>
   </b-input-group>
 
-      <b-button  class="mt-4" block variant="info">Login</b-button>
+      <b-button  class="mt-4" block variant="info">Override</b-button>
       </b-modal>
 
 </template>
 <script>
 export default {
-  name: 'UserlockModal'
+  name: 'OverrideModal'
 
 };
 </script>

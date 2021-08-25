@@ -30,6 +30,7 @@
       <payroll-year-holiday/>
       <userlogout-modal/>
       <userlock-modal/>
+      <override-modal/>
 
   </div>
 </template>
@@ -55,8 +56,9 @@ import PayrollYearHoliday from './components/PayrollYearHoliday.vue';
 import AddEmployee from './components/AddEmployee.vue';
 import UserlogoutModal from './components/UserlogoutModal.vue';
 import UserlockModal from './components/UserlockModal.vue';
+import OverrideModal from './components/OverrideModal.vue';
 export default {
-  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee, UserlogoutModal, UserlockModal }
+  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee, UserlogoutModal, UserlockModal, OverrideModal }
 };
 </script>,
     ChangeDue
