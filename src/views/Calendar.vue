@@ -49,11 +49,11 @@
               {{ attr.customData.title }}
             </p>
           </div>
+
         </div>
       </template>
     </v-calendar>
   </div>
-
 </div>
    </template>
 <script>
