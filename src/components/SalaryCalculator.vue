@@ -1,5 +1,6 @@
 <template>
 <b-modal id="SalaryCalculator" size="md" centered title="Salary Calculator">
+   <template #modal-title> Salary Calculator <font-awesome-icon size="1x" :icon="['fas', 'calculator']"/></template>
   <b-row class='mb-4'>
     <b-col class="text-right" cols="4" >
       Calculate:
@@ -28,8 +29,9 @@
     <b-col cols="6"><b-input/></b-col>
      </b-row>
                 <b-row class='mt-4 mb-2 text-center'>
-                  <b-col class='text-right' style="color:red" cols="4"> Gross</b-col>
+                  <b-col class='text-right' style="color:red" cols="3"> Gross</b-col>
         <b-col  cols="6"><b-input class="text-right" placeholder="0.00"/></b-col>
+        <b-col class='text-right' style="color:red" cols="1"><b-btn v-b-tooltip.hover title="taxes" size="sm" variant="info"><font-awesome-icon size="1x" :icon="['fas', 'percent']"/></b-btn></b-col>
      </b-row>
  </b-modal>
 </template>
