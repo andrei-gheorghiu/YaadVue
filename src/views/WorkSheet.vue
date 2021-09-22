@@ -74,29 +74,102 @@ export default {
     dropdownBar: [].concat(wsWorkingPaperDropdown, wsAnalysisDropdown, wsStatementDropdown, wsUtilityDropdown, worksheetDnaDropdown, userDropdown),
     treeData0: [
       {
-        text: 'Disc C:',
+        text: 'ABC Inc:',
         state: { expanded: true },
         children: [
-          { text: 'PerfLogs' },
+          { text: 'Financials' },
+          { text: 'Working Trial Balance' },
+          { text: 'Adjusting Entries' },
           {
-            text: 'Users',
+            text: 'Cash & Bank',
             children: [
-              { text: 'User 1' },
+              { text: 'Lead' },
               { text: 'User 2' },
               { text: 'User 3' }
             ]
           },
-          { text: 'tomcat' },
-          { text: 'sysCache' },
           {
-            text: 'Program Files',
+            text: 'Receivables',
             children: [
-              { text: 'Intel' },
+              { text: 'Lead' },
               { text: 'Internet Explorer' },
-              { text: 'Opera' },
-              { text: 'Oracle' }
+              { text: 'Opera' }
             ]
-          }
+          },
+          {
+            text: 'Other Current Assets',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Non-Current Assets',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Accounts Payable',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Other Current Liabilities',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Non-Current Liabilities',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Equity',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Income',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Cost of Sales',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Expense',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          { text: 'Analysis' },
+          { text: 'Review Notes' }
         ]
       }
     ]

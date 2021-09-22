@@ -1,10 +1,13 @@
 <template>
 <div class="Schedule">
   <b-row class="mb-2 mt-4">
-    <b-col>
+    <b-col  cols="3">
         <h5 class="mb-1">Entity Name</h5>
     <h6 class="mb-1"> Financial Year Ended December 31, 2021</h6>
-    <h4 class="mb-1">Schedule</h4>
+    <h4 class="mb-1">Schedule </h4>
+      </b-col>
+      <b-col class="mt-5" cols="2">
+        <b><b-input class="text-center"/></b>
       </b-col>
       <b-col>
         <b-row >

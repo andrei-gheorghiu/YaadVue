@@ -32,7 +32,8 @@
         </div><div class="col-auto">
           <div class="icon icon-shape text-white rounded-circle shadow bg-gradient-red">
             <i class="ni ni-active-40"></i></div></div></div>
-            <p class="mt-3 mb-0 text-sm"><span class="text-success mr-2">3.48%</span><span class="text-nowrap"><b-btn>Since last month</b-btn></span>
+            <p class="mt-3 mb-0 text-sm"><span class="text-success mr-2">3.48%</span><span class="text-nowrap">
+              <b-btn @click="$router.push('Payroll')">Payroll</b-btn></span>
             </p></div><!---->
                         <!----><!----><!----></div></div>
             <div class="col-md-6 col-xl-3">
