@@ -255,6 +255,20 @@ const routes = [
         props: true,
         component: () =>
           import(/* webpackChunkName: "target" */ '../views//Sales/SalesGridPay.vue')
+      },
+      {
+        path: '/salesgrid/order',
+        name: 'SalesGridOrder',
+        props: true,
+        component: () =>
+          import(/* webpackChunkName: "target" */ '../views//Sales/SalesGridOrder.vue')
+      },
+      {
+        path: '/salesgrid/table',
+        name: 'SalesGridTable',
+        props: true,
+        component: () =>
+          import(/* webpackChunkName: "target" */ '../views//Sales/SalesGridTable.vue')
       }
     ],
     icon: 'SettingsIcon'

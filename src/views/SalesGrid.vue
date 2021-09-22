@@ -30,13 +30,13 @@
               </div>
               <div class="text-center" style="font-size: 0.8rem;"><b>Customer</b></div>
             </b-list-group-item>
-            <b-list-group-item button class="col  rounded shadow">
+            <b-list-group-item @click="$router.push('/salesgrid/order')" button class="col  rounded shadow">
               <div class="text-center" style="font-size: 0.8rem;">
                 <font-awesome-icon size="3x" :icon="['fas', 'clipboard']"/>
               </div>
               <div class="text-center" style="font-size: 0.8rem;"><b>Orders</b></div>
             </b-list-group-item>
-            <b-list-group-item button class="col mr-2 rounded border-left shadow"
+            <b-list-group-item @click="$router.push('/salesgrid/table')" button class="col mr-2 rounded border-left shadow"
             >
               <div class="text-center" style="font-size: 0.8rem;">
                 <font-awesome-icon size="3x" :icon="['fas', 'chair']"/>

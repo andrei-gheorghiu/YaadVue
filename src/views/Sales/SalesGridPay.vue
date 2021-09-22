@@ -1,7 +1,7 @@
 <template>
     <div class="mt-1">
         <b-row>
-         <div class="text-left"><b-btn @click="$router.push('/salesgrid')" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'arrow-left']" /></b-btn></div>
+         <div class="text-left"><b-btn @click="$router.push('/salesgrid')" variant="transparent"><font-awesome-icon size="1x" :icon="['fas', 'home']" /></b-btn></div>
         </b-row>
          <b-card no-body>
     <b-tabs card align="center">
