@@ -41,18 +41,18 @@
                 <div class="col"><h5 class="card-title text-uppercase text-muted mb-0">Work Sheet</h5><span class="h2 font-weight-bold mb-0">2,356</span>
                 </div><div class="col-auto"><div class="icon icon-shape text-white rounded-circle shadow bg-gradient-orange">
                   <i class="ni ni-chart-pie-35"></i></div></div></div><p class="mt-3 mb-0 text-sm">
-                    <span class="text-success mr-2">12.18%</span><span class="text-nowrap"><b-btn><b-btn>Since last month</b-btn></b-btn></span
+                    <span class="text-success mr-2">12.18%</span><span class="text-nowrap"><b-btn @click="$router.push('worksheet')">Work Sheet</b-btn></span
                     ></p></div><!----><!----><!----><!----></div></div><div class="col-md-6 col-xl-3">
                       <div class="card card-stats mb-4" show-footer-line="true"><!----><!----><!---->
                       <div class="card-body"><!----><!----><div class="row">
-                        <div class="col"><h5 class="card-title text-uppercase text-muted mb-0">TimeStamp</h5><span class="h2 font-weight-bold mb-0">924</span>
+                        <div class="col"><h5 class="card-title text-uppercase text-muted mb-0">Time Stamp</h5><span class="h2 font-weight-bold mb-0">924</span>
                         </div><div class="col-auto"><div class="icon icon-shape text-white rounded-circle shadow bg-gradient-green"><i class="ni ni-money-coins"></i>
                         </div></div></div><p class="mt-3 mb-0 text-sm"><span class="text-danger mr-2">5.72%</span><span class="text-nowrap"><b-btn>Since last month</b-btn></span></p>
                         </div><!----><!----><!----><!----></div></div><div class="col-md-6 col-xl-3"><div class="card card-stats mb-4" show-footer-line="true"><!----><!----><!---->
                         <div class="card-body"><!----><!----><div class="row"><div class="col"><h5 class="card-title text-uppercase text-muted mb-0">Calendar</h5><span class="h2 font-weight-bold mb-0">49,65%</span></div><div class="col-auto"><div class="icon icon-shape text-white rounded-circle shadow bg-gradient-info"><i class="ni ni-chart-bar-32"></i>
                         </div>
                         </div>
-                        </div><p class="mt-3 mb-0 text-sm"><span class="text-success mr-2">54.8%</span><span class="text-nowrap"><b-btn>Since last month</b-btn></span></p>
+                        </div><p class="mt-3 mb-0 text-sm"><span class="text-success mr-2">54.8%</span><span class="text-nowrap"><b-btn @click="$router.push('Calendar')">Calendar</b-btn></span></p>
                         </div><!----><!----><!----><!----></div></div></div></div></div></div>
 
                         <b-row>
