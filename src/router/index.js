@@ -207,6 +207,21 @@ const routes = [
     icon: 'SettingsIcon'
   },
   {
+    path: '/timestamp',
+    name: 'TimeStamp',
+    component: () => import(/* webpackChunkName: "chartofaccounts" */ '../views/TimeStamp.vue'),
+    children: [
+      {
+        path: '/timestamp',
+        name: 'TimeStampHome',
+        props: true,
+        component: () =>
+          import(/* webpackChunkName: "target" */ '../views/Timestamp/Timestamphome.vue')
+      }
+    ],
+    icon: 'SettingsIcon'
+  },
+  {
     path: '/paybill',
     name: 'PayBill',
     component: () => import(/* webpackChunkName: "chartofaccounts" */ '../views/PayBill.vue'),
