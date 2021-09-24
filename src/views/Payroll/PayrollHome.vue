@@ -11,12 +11,22 @@
                <div>
 
   <div><h4 class="mb-2">Directory of Employee</h4></div>
-     <tree
-      :data="treeData"
-      :options="treeOptions"
-      @node:dragging:start="logDragStart"
-      @node:dragging:finish="logDragFinish"
-    />
+<tree :data="treeData0" >
+            <span class="tree-text" slot-scope="{ node }">
+              <template v-if="!node.hasChildren()">
+                <b-form-checkbox>
+               <feather-icon size="1x" icon="FileTextIcon"/>
+                {{ node.text }}</b-form-checkbox>
+              </template>
+
+              <template v-else>
+                  <b-form-checkbox>
+              <feather-icon size="1x" icon="FolderIcon"/>
+                             {{ node.text }}
+                             </b-form-checkbox>
+              </template>
+            </span>
+</tree>
       </div>
             </b-col>
         </b-row>
@@ -29,80 +39,109 @@ export default {
   name: 'PayrollHome',
   check: true,
   data: () => ({
-    treeData: getTreeData(),
-    treeOptions: {
-      propertyNames: {
-        text: 'MY_TEXT',
-        children: 'KIDS',
-        state: 'OPTIONS'
-      },
-      dnd: true,
-      checkbox: true
-    }
-  }),
-  methods: {
-    logDragStart (node) {
-      console.log('Start dragging: ' + node.text);
-    },
-
-    logDragFinish (targetNode, distinationNode) {
-      console.log(`Stop dragging: [TARGET]${targetNode.text}`);
-    }
-  }
+    treeData0: [
+      {
+        text: 'ABC Inc:',
+        state: { expanded: true },
+        children: [
+          { text: 'Financials' },
+          { text: 'Working Trial Balance' },
+          { text: 'Adjusting Entries' },
+          {
+            text: 'Cash & Bank',
+            children: [
+              { text: 'Lead' },
+              { text: 'User 2' },
+              { text: 'User 3' }
+            ]
+          },
+          {
+            text: 'Receivables',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Other Current Assets',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Non-Current Assets',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Accounts Payable',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Other Current Liabilities',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Non-Current Liabilities',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Equity',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Income',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Cost of Sales',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Expense',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          { text: 'Analysis' },
+          { text: 'Review Notes' }
+        ]
+      }
+    ]
+  })
 };
-function getTreeData () {
-  return [
-    {
-      MY_TEXT: 'JS: The Right Way',
-      OPTIONS: { expanded: true },
-      KIDS: [
-        { MY_TEXT: 'Getting Started (NOT DRAGGABLE)', OPTIONS: { checked: true, draggable: false } },
-        { MY_TEXT: 'JavaScript Code Style', OPTIONS: { selected: true } },
-        { MY_TEXT: 'MVC Pattern (NOT DROPABLE)', OPTIONS: { dropable: false } },
-        { MY_TEXT: 'MVP Pattern' },
-        { MY_TEXT: 'MVVM Pattern' },
-        {
-          MY_TEXT: 'The Good Parts',
-          KIDS: [
-            { MY_TEXT: 'OBJECT ORIENTED', OPTIONS: { checked: true } },
-            { MY_TEXT: 'ANONYMOUS FUNCTIONS', OPTIONS: { checked: true } },
-            { MY_TEXT: 'FUNCTIONS AS FIRST-CLASS OBJECTS', OPTIONS: { checked: true } },
-            { MY_TEXT: 'LOOSE TYPING', OPTIONS: { checked: true } }
-          ]
-        },
-        {
-          MY_TEXT: 'Patterns',
-          KIDS: [
-            {
-              MY_TEXT: 'DESIGN PATTERNS',
-              OPTIONS: { expanded: true },
-              KIDS: [
-                {
-                  MY_TEXT: 'Creational Design Patterns',
-                  KIDS: [
-                    { MY_TEXT: 'Factory' },
-                    { MY_TEXT: 'Prototype' },
-                    { MY_TEXT: 'Mixin' },
-                    { MY_TEXT: 'Singleton' }
-                  ]
-                },
-                { MY_TEXT: 'Structural Design Patterns' }
-              ]
-            },
-            {
-              MY_TEXT: 'MV* PATTERNS',
-              cildren: [
-                { MY_TEXT: 'MVC Pattern' },
-                { MY_TEXT: 'MVP Pattern' },
-                { MY_TEXT: 'MVVM Pattern' }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ];
-}
 </script>
 <style lang="scss">
 </style>
