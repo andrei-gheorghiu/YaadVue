@@ -31,6 +31,7 @@
       <userlogout-modal/>
       <userlock-modal/>
       <override-modal/>
+      <employment-status/>
 
   </div>
 </template>
@@ -57,8 +58,9 @@ import AddEmployee from './components/AddEmployee.vue';
 import UserlogoutModal from './components/UserlogoutModal.vue';
 import UserlockModal from './components/UserlockModal.vue';
 import OverrideModal from './components/OverrideModal.vue';
+import EmploymentStatus from './components/EmploymentStatus.vue';
 export default {
-  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee, UserlogoutModal, UserlockModal, OverrideModal }
+  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee, UserlogoutModal, UserlockModal, OverrideModal, EmploymentStatus }
 };
 </script>,
     ChangeDue

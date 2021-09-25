@@ -6,7 +6,7 @@ export default {
     { name: 'Personal Records', icon: 'FileIcon' },
     null,
     { name: 'Add New Employee', icon: 'FileTextIcon', modalTarget: 'AddEmployee' },
-    { name: 'Make Employee Inactive', icon: 'FileTextIcon' },
+    { name: 'Make Employee Inactive', icon: 'FileTextIcon', modalTarget: 'EmploymentStatus' },
     null,
     { name: 'Do Appraisal', icon: 'FileIcon' },
     { name: 'Leave of Absence', icon: 'FileTextIcon' },

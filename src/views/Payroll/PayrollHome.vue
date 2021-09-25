@@ -11,11 +11,24 @@
                <div>
 
   <div><h4 class="mb-2">Directory of Employee</h4></div>
-<tree :data="treeData0" >
+  <div>
+  <b-tabs content-class="mt-3">
+    <b-tab title="Monthly" active><p>
+            <!---------Dropdown--->
+     <b-col class="text-right">
+         <b-dropdown size="sm" id="dropdown-1" text="All"  class="mr-4">
+    <b-dropdown-item>All</b-dropdown-item>
+    <b-dropdown-item>Manager</b-dropdown-item>
+    <b-dropdown-item>Execs</b-dropdown-item>
+  </b-dropdown>
+
+     </b-col>
+         <!---------Dropdown--->
+      <tree :data="treeData0" >
             <span class="tree-text" slot-scope="{ node }">
               <template v-if="!node.hasChildren()">
                 <b-form-checkbox>
-               <feather-icon size="1x" icon="FileTextIcon"/>
+               <feather-icon size="1x" icon="UserIcon"/>
                 {{ node.text }}</b-form-checkbox>
               </template>
 
@@ -27,6 +40,39 @@
               </template>
             </span>
 </tree>
+</p></b-tab>
+    <b-tab title="Fortnightly"><p>
+      <!---------Dropdown--->
+     <b-col class="text-right">
+         <b-dropdown size="sm" id="dropdown-1" text="All"  class="mr-4">
+    <b-dropdown-item>All</b-dropdown-item>
+    <b-dropdown-item>Manager</b-dropdown-item>
+    <b-dropdown-item>Execs</b-dropdown-item>
+  </b-dropdown>
+
+     </b-col>
+         <!---------Dropdown--->
+            <tree :data="treeData1" >
+            <span class="tree-text" slot-scope="{ node }">
+              <template v-if="!node.hasChildren()">
+                <b-form-checkbox>
+               <feather-icon size="1x" icon="UserIcon"/>
+                {{ node.text }}</b-form-checkbox>
+              </template>
+
+              <template v-else>
+                  <b-form-checkbox>
+              <feather-icon size="1x" icon="FolderIcon"/>
+                             {{ node.text }}
+                             </b-form-checkbox>
+              </template>
+            </span>
+</tree>
+</p></b-tab>
+    <b-tab title="Bi-Monthly" disabled><p>I'm a disabled tab!</p></b-tab>
+  </b-tabs>
+</div>
+
       </div>
             </b-col>
         </b-row>
@@ -34,7 +80,6 @@
 
 </template>
 <script>
-
 export default {
   name: 'PayrollHome',
   check: true,
@@ -44,11 +89,8 @@ export default {
         text: 'ABC Inc:',
         state: { expanded: true },
         children: [
-          { text: 'Financials' },
-          { text: 'Working Trial Balance' },
-          { text: 'Adjusting Entries' },
           {
-            text: 'Cash & Bank',
+            text: 'Accountant',
             children: [
               { text: 'Lead' },
               { text: 'User 2' },
@@ -56,7 +98,7 @@ export default {
             ]
           },
           {
-            text: 'Receivables',
+            text: 'General Manager',
             children: [
               { text: 'Lead' },
               { text: 'Internet Explorer' },
@@ -64,7 +106,7 @@ export default {
             ]
           },
           {
-            text: 'Other Current Assets',
+            text: 'Manager',
             children: [
               { text: 'Lead' },
               { text: 'Internet Explorer' },
@@ -72,7 +114,7 @@ export default {
             ]
           },
           {
-            text: 'Non-Current Assets',
+            text: 'Supervisor',
             children: [
               { text: 'Lead' },
               { text: 'Internet Explorer' },
@@ -80,64 +122,85 @@ export default {
             ]
           },
           {
-            text: 'Accounts Payable',
+            text: 'Other',
             children: [
               { text: 'Lead' },
               { text: 'Internet Explorer' },
               { text: 'Opera' }
             ]
-          },
-          {
-            text: 'Other Current Liabilities',
-            children: [
-              { text: 'Lead' },
-              { text: 'Internet Explorer' },
-              { text: 'Opera' }
-            ]
-          },
-          {
-            text: 'Non-Current Liabilities',
-            children: [
-              { text: 'Lead' },
-              { text: 'Internet Explorer' },
-              { text: 'Opera' }
-            ]
-          },
-          {
-            text: 'Equity',
-            children: [
-              { text: 'Lead' },
-              { text: 'Internet Explorer' },
-              { text: 'Opera' }
-            ]
-          },
-          {
-            text: 'Income',
-            children: [
-              { text: 'Lead' },
-              { text: 'Internet Explorer' },
-              { text: 'Opera' }
-            ]
-          },
-          {
-            text: 'Cost of Sales',
-            children: [
-              { text: 'Lead' },
-              { text: 'Internet Explorer' },
-              { text: 'Opera' }
-            ]
-          },
-          {
-            text: 'Expense',
-            children: [
-              { text: 'Lead' },
-              { text: 'Internet Explorer' },
-              { text: 'Opera' }
-            ]
-          },
-          { text: 'Analysis' },
-          { text: 'Review Notes' }
+          }
         ]
+      }
+    ],
+    treeData1: [
+      {
+        text: 'ABC Inc:',
+        state: { expanded: true },
+        children: [
+          {
+            text: 'Prep Cook',
+            children: [
+              { text: 'Lead' },
+              { text: 'User 2' },
+              { text: 'User 3' }
+            ]
+          },
+          {
+            text: 'Cooks',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Diswasher',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Servers',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Runners',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'House Keepers',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Kitchen Supervisor',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          },
+          {
+            text: 'Server Supervisor',
+            children: [
+              { text: 'Lead' },
+              { text: 'Internet Explorer' },
+              { text: 'Opera' }
+            ]
+          }]
       }
     ]
   })

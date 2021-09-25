@@ -3,8 +3,13 @@ export default {
   icon: 'TrendingUpIcon',
   expanded: true,
   items: [
-    { name: 'Year Over Year', icon: 'FileTextIcon' },
+    { name: 'Vertical', icon: 'FileTextIcon' },
     null,
-    { name: 'Percentage of Sales', icon: 'FileIcon' }
+    { name: 'Horizontal', icon: 'FileIcon' },
+    null,
+    { name: 'Ratio', icon: 'FileIcon' },
+    { name: 'KPIs', icon: 'FileIcon' },
+    null,
+    { name: 'Custom', icon: 'FileIcon' }
   ]
 };
