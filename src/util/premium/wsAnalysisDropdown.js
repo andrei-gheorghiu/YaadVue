@@ -4,7 +4,6 @@ export default {
   expanded: true,
   items: [
     { name: 'Vertical', icon: 'FileTextIcon' },
-    null,
     { name: 'Horizontal', icon: 'FileIcon' },
     null,
     { name: 'Ratio', icon: 'FileIcon' },

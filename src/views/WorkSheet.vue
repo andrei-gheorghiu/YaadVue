@@ -44,6 +44,18 @@
     </b-sidebar>
        <div class="border-top mb-1"></div>
        <b-row>
+         <!-----breadgrumps-->
+         <b-col>
+            <b-breadcrumb style="background:white" type="light">
+    <b-breadcrumb-item to='/worksheet'>
+      <b-icon icon="house-fill" scale="1.25" shift-v="1.25" aria-hidden="true"></b-icon>
+       Home
+    </b-breadcrumb-item>
+    <b-breadcrumb-item href="#foo" >Entity</b-breadcrumb-item>
+    <b-breadcrumb-item href="#bar">Year</b-breadcrumb-item>
+    <b-breadcrumb-item active>Unadjusted Trial Balance</b-breadcrumb-item>
+  </b-breadcrumb>
+         </b-col>
         <b-col class="text-right mr-4">
 
         <b-btn v-b-modal.AddEmployee size="sm" class="sm mr-2" variant="Transparent"><a style="color:blue"><strong>Status:</strong></a> Not Started </b-btn>
@@ -55,7 +67,7 @@
       </b-dropdown>
         </b-col>
        </b-row>
-  <router-view><div>Test</div></router-view>
+  <router-view></router-view>
    </div>
 </template>
 <script>

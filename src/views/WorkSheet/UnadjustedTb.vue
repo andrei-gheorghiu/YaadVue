@@ -1,27 +1,33 @@
 <template>
 <div class="UnadjustedTrialbalance">
-  <b-row class="mb-2 mt-4">
+  <b-row class="mb-1">
     <b-col>
-      <h5 class="mb-1">UnAdjusted Trial Balance</h5>
-        <h5 class="mb-1">Entity Name</h5>
-    <h6 class="mb-1"> Financial Year Ended December 31, 2021</h6>
-          </b-col>
+       </b-col>
       <b-col>
         <b-row >
-          <b-col class="border text-center">
-            <b>Completed By:</b>
+          <b-col class="text-right">
+            Total Debit
           </b-col>
-                    <b-col class="border text-center">
-            <b>Reviewed By:</b>
+                    <b-col class="border text-right">
+            $0.00
+          </b-col>
+          <b-col/>
+        </b-row>
+        <b-row >
+          <b-col class="text-right">
+            Total Credit
+          </b-col>
+                    <b-col class="border text-right">
+            -$0.00
           </b-col>
           <b-col/>
         </b-row>
         <b-row class="mb-3">
-              <b-col class="border text-center">
-            Harry Brown
+              <b-col class="text-right">
+            Variance
           </b-col>
-                    <b-col class="border text-center">
-            Marlon Phillips
+                    <b-col class="border text-right">
+            $0.00
           </b-col>
           <b-col class="text-right"> </b-col>
         </b-row>

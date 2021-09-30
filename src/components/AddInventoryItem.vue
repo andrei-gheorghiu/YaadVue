@@ -24,7 +24,7 @@
       </b-row>
     <b-row class='mb-2'>
     <b-col class='text-right md-2' cols="3"> Department  </b-col>
-    <b-col cols="6"><b-input/></b-col>
+    <b-col cols="6"><b-input>test</b-input></b-col>
   </b-row>
     <b-row class='mb-2'>
     <b-col class='text-right' cols="3"> Measure </b-col>

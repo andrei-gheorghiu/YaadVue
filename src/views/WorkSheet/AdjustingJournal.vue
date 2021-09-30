@@ -1,32 +1,29 @@
 <template>
 <div class="adjustingjournal">
-  <b-row class="mb-2 mt-4">
+  <b-row class="mb-2">
     <b-col>
-      <h5 class="mb-1">Adjusting Journals</h5>
-        <h5 class="mb-1">Entity Name</h5>
-    <h6 class="mb-1"> Financial Year Ended December 31, 2021</h6>
           </b-col>
           <b-col>
-             <b-button class="mr-2" variant="info" v-b-modal.NewAdjJournal><feather-icon size="1x" icon="PlusSquareIcon" /> New</b-button>
-              <b-button class="mr-2" variant="success"><feather-icon size="1x" icon="EditIcon" /> Edit</b-button>
-               <b-button variant="danger"><feather-icon size="1x" icon="MinusSquareIcon" /> Delete</b-button>
+             <b-button size="sm" class="mr-2" variant="info" v-b-modal.NewAdjJournal><feather-icon size="1x" icon="PlusSquareIcon" /> New</b-button>
+              <b-button size="sm" class="mr-2" variant="success"><feather-icon size="1x" icon="EditIcon" /> Edit</b-button>
+               <b-button size="sm" variant="danger"><feather-icon size="1x" icon="MinusSquareIcon" /> Delete</b-button>
           </b-col>
       <b-col>
         <b-row >
-          <b-col class="border text-center">
-            <b>Completed By:</b>
+          <b-col class="text-right">
+            Total Debit
           </b-col>
-                    <b-col class="border text-center">
-            <b>Reviewed By:</b>
+                    <b-col class="border text-right">
+            $0.00
           </b-col>
           <b-col/>
         </b-row>
-        <b-row class="mb-3">
-              <b-col class="border text-center">
-            Harry Brown
+        <b-row class="mb-2">
+              <b-col class="text-right">
+            Total Credit
           </b-col>
-                    <b-col class="border text-center">
-            Marlon Phillips
+                    <b-col class="border text-right">
+            $0.00
           </b-col>
           <b-col class="text-right"> </b-col>
         </b-row>

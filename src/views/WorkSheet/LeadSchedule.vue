@@ -1,30 +1,27 @@
 <template>
 <div class="Schedule">
-  <b-row class="mb-2 mt-4">
+  <h4 class="mb-1 ml-4">CASH </h4>
+  <b-row class="mb-2">
     <b-col  cols="3">
-        <h5 class="mb-1">Entity Name</h5>
-    <h6 class="mb-1"> Financial Year Ended December 31, 2021</h6>
-    <h4 class="mb-1">Schedule </h4>
-      </b-col>
-      <b-col class="mt-5" cols="2">
-        <b><b-input class="text-center"/></b>
-      </b-col>
+       </b-col>
+      <b-col >
+          </b-col>
       <b-col>
         <b-row >
-          <b-col class="border text-center">
-            <b>Completed By:</b>
+          <b-col class="text-right">
+            Unadjusted Total:
           </b-col>
-                    <b-col class="border text-center">
-            <b>Reviewed By:</b>
+                    <b-col class="border text-right">
+           $0.00
           </b-col>
           <b-col/>
         </b-row>
         <b-row class="mb-3">
-              <b-col class="border text-center">
-            Harry Brown
+              <b-col class="text-right">
+             <b>Adjusted Total:</b>
           </b-col>
-                    <b-col class="border text-center">
-            Marlon Phillips
+                    <b-col class="border text-right">
+            $0.00
           </b-col>
           <b-col class="text-right"> </b-col>
         </b-row>
