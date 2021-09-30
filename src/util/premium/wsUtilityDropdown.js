@@ -9,6 +9,8 @@ export default {
     { name: 'Roll Forward', icon: 'RotateCwIcon', modalTarget: 'RollForward' },
     { name: 'Template', icon: 'FileTextIcon' },
     null,
+    { name: 'Review', icon: 'FileIcon' },
+    null,
     { name: 'Export Data', icon: 'FileIcon' }
   ]
 };
