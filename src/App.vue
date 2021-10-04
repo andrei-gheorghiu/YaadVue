@@ -32,6 +32,7 @@
       <userlock-modal/>
       <override-modal/>
       <employment-status/>
+       <ws-new-entity/>
 
   </div>
 </template>
@@ -59,8 +60,9 @@ import UserlogoutModal from './components/UserlogoutModal.vue';
 import UserlockModal from './components/UserlockModal.vue';
 import OverrideModal from './components/OverrideModal.vue';
 import EmploymentStatus from './components/EmploymentStatus.vue';
+import WsNewEntity from './components/WsNewEntity.vue';
 export default {
-  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee, UserlogoutModal, UserlockModal, OverrideModal, EmploymentStatus }
+  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee, UserlogoutModal, UserlockModal, OverrideModal, EmploymentStatus, WsNewEntity }
 };
 </script>,
     ChangeDue

@@ -5,7 +5,7 @@
             <h4>Overview</h4>
             </b-col>--->
                         <b-col class="mb-4">
-                <b-button size="sm" class="mr-2" variant="info"><feather-icon size="1x" icon="FilePlusIcon" /> Add Return</b-button>
+                <b-button size="sm" class="mr-2" variant="info" v-b-modal.WsNewEntity><feather-icon size="1x" icon="FilePlusIcon" /> Add Entity</b-button>
                 <b-button size="sm" variant="success" v-b-modal.RollForward><feather-icon size="1x" icon="RotateCwIcon" />  Roll Forward</b-button>
                                                     </b-col>
         </b-row>
