@@ -17,7 +17,7 @@
       <b-col class="text-right" cols="3"><b-btn block variant="info">make INACTIVE</b-btn></b-col>
          </b-row>
               <b-row>
-      <b-col class="text-right mb-1" cols="3"><btn size="sm" class=""><font-awesome-icon size="1x" :icon="['fas', 'book']"/> Job Description</btn></b-col>
+      <b-col class="text-right mb-1" cols="3"><b-btn variant="trasparent" size="sm" class=""><font-awesome-icon size="1x" :icon="['fas', 'book']"/> Job Description</b-btn></b-col>
       <b-col cols="7"></b-col>
       <b-col></b-col>
       </b-row>
