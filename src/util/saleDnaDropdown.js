@@ -5,7 +5,7 @@ export default {
   items: [
     { name: 'Return', icon: 'RotateCcwIcon' },
     { name: 'On-Hold', icon: 'InboxIcon', dataModal: 'test-modal' },
-    { name: 'End of Day', icon: 'LayersIcon' },
+    { name: 'End of Day', icon: 'LayersIcon', modalTarget: 'EndofdayModal' },
     null,
     { name: 'History', icon: 'ActivityIcon', to: '/Saleshistory' },
     null,

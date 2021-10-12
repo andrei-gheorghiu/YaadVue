@@ -34,6 +34,7 @@
       <employment-status/>
        <ws-new-entity/>
        <template-modal/>
+       <endofday-modal/>
 
   </div>
 </template>
@@ -63,9 +64,10 @@ import OverrideModal from './components/OverrideModal.vue';
 import EmploymentStatus from './components/EmploymentStatus.vue';
 import WsNewEntity from './components/WsNewEntity.vue';
 import TemplateModal from './components/TemplateModal';
+import EndofdayModal from './components/EndofdayModal.vue';
 
 export default {
-  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee, UserlogoutModal, UserlockModal, OverrideModal, EmploymentStatus, WsNewEntity, TemplateModal }
+  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee, UserlogoutModal, UserlockModal, OverrideModal, EmploymentStatus, WsNewEntity, TemplateModal, EndofdayModal }
 };
 </script>,
     ChangeDue
