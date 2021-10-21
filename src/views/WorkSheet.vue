@@ -58,7 +58,7 @@
          </b-col>
         <b-col class="text-right mr-4">
 
-        <b-btn v-b-modal.AddEmployee size="sm" class="sm mr-2" variant="Transparent"><a style="color:blue"><strong>Status:</strong></a> Not Started </b-btn>
+        <b-btn v-b-modal.ReturnProperties size="sm" class="sm mr-2" variant="Transparent"><a style="color:blue"><strong>Status:</strong></a> Not Started </b-btn>
       <b-dropdown  size="sm" class="sm mb-1" variant="info" right text= 'Action'>
        <b-dropdown-item v-b-modal.AddEmployee >Action</b-dropdown-item>
     <b-dropdown-item href="#">test</b-dropdown-item>
