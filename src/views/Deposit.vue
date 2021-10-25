@@ -62,7 +62,7 @@ Date</b>
     <b-col class="text-right" style="font-size: 0.9rem;">
          <b>Total</b>
     </b-col>
-    <b-col class="border text-left">
+    <b-col style="height:30px" class="border text-left">
          $10,000.00
     </b-col>
 </b-row>
@@ -83,7 +83,7 @@ Date</b>
     <b-col class="text-right" style="font-size: 0.9rem;">
          <b>Selected Payment Total</b>
     </b-col>
-    <b-col class="border">
+    <b-col style="height:30px"  class="border">
         <h5> $10.000.00</h5>
     </b-col>
 </b-row>

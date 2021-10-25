@@ -170,7 +170,7 @@
       {{ index + 1 }}
       </template>
                         <template v-slot:cell()="{ item, field: { key }}">
-      <b-form-input v-model="item[key]" />
+      <b-form-input style="height:30px"  v-model="item[key]" />
     </template>
         </b-table>
 

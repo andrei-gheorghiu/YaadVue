@@ -4,7 +4,7 @@
         <b-col class="border"></b-col>
     <b-col cols="4" class="border">
        <b-row  class="mb-2 mt-4" >
-                               <b-col   style="font-size: 1.25rem;" class="bg-light border shadow text-center ml-5 mb-3" md="9" >
+                               <b-col   style="font-size: 1.25rem; height:50px" class="bg-light border shadow text-center ml-5 mb-3" md="9" >
                                   <div class="display">{{current || 'Enter Employee Pin'}}</div>
                                </b-col>
                            </b-row>

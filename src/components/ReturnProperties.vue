@@ -15,6 +15,7 @@
 <div><b-input style="height:20px"/></div>
 <div class="mt-4 text-center">
      <b-button-group size="sm">
+       <b-button v-b-tooltip.hover title="Procedures" class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'list-ol']"/></b-button>
       <b-button v-b-tooltip.hover title="Review Question" class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'question-circle']"/></b-button>
       <b-button v-b-tooltip.hover title="Notes" class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'sticky-note']"/></b-button>
       <b-button v-b-tooltip.hover title="Lock" class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'lock']"/></b-button>

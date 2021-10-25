@@ -34,6 +34,7 @@
     <b-col cols='3'>
         <b-input-group class="mb-2">
       <b-form-input
+      style="height:30px"
         id="example-input"
         class="mx-5"
         v-model="value"
@@ -46,7 +47,7 @@
   </b-col>
     <b-col><!---leave blank--></b-col>
     <b-col class="text-right">Debit</b-col>
-    <b-col class="border mb-2 mx-4 text-right">$10,000</b-col>
+    <b-col style="height:30px" class="border mb-2 mx-4 text-right">$10,000</b-col>
   </b-row>
 
    <!-----Row Two--->
@@ -54,9 +55,10 @@
   <b-row>
     <b-col class=text-right> <b>Journal Entry No. </b>
        </b-col>
-    <b-col cols='3'>
+    <b-col style="height:30px" cols='3'>
         <b-input-group class="mb-2">
       <b-form-input
+      style="height:30px"
         id="example-input"
         class="mx-5"
         v-model="value2"
@@ -68,7 +70,7 @@
   </b-col>
     <b-col><!---leave blank--></b-col>
     <b-col class="text-right">Credit</b-col>
-    <b-col class="border mb-2 mx-4 text-right">-$10,000</b-col>
+    <b-col style="height:30px" class="border mb-2 mx-4 text-right">-$10,000</b-col>
   </b-row>
    <!-----First Row--->
   <b-row>
@@ -78,8 +80,8 @@
 <b-form-checkbox class="ml-4" ></b-form-checkbox>
   </b-col>
     <b-col><!---leave blank--></b-col>
-    <b-col class="text-right">Difference</b-col>
-    <b-col class="border mx-4 text-right">$0,00</b-col>
+    <b-col  class="text-right">Difference</b-col>
+    <b-col style="height:30px" class="border mx-4 text-right">$0,00</b-col>
   </b-row>
 
                     <b-table striped hover :items="items" :fields="fields"  :small="true"
@@ -89,7 +91,7 @@
       {{ index + 1 }}
       </template>
                         <template v-slot:cell()="{ item, field: { key }}">
-      <b-form-input v-model="item[key]" />
+      <b-form-input style="height:30px"  v-model="item[key]" />
     </template>
 
         </b-table>
