@@ -16,12 +16,12 @@
 <div class="mt-4 text-center">
      <b-button-group size="sm">
       <b-button v-b-tooltip.hover title="Review Question" class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'question-circle']"/></b-button>
-      <b-button v-b-tooltip.hover title="notes" class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'sticky-note']"/></b-button>
-      <b-button class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'lock']"/></b-button>
-      <b-button class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'bookmark']"/></b-button>
-      <b-button class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'paperclip']"/></b-button>
-       <b-button class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'hourglass-end']"/></b-button>
-        <b-button class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'fire']"/></b-button>
+      <b-button v-b-tooltip.hover title="Notes" class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'sticky-note']"/></b-button>
+      <b-button v-b-tooltip.hover title="Lock" class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'lock']"/></b-button>
+      <b-button v-b-tooltip.hover title="Bookmark" class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'bookmark']"/></b-button>
+      <b-button v-b-tooltip.hover title="Attachment" class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'paperclip']"/></b-button>
+       <b-button v-b-tooltip.hover title="Time" class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'hourglass-end']"/></b-button>
+        <b-button v-b-tooltip.hover title="Going Concern" class="mr-1" variant="transparent"><font-awesome-icon size="2x" :icon="['fas', 'fire']"/></b-button>
         </b-button-group>
 
 </div>
