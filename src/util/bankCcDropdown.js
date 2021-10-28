@@ -3,7 +3,7 @@ export default {
   icon: 'CreditCardIcon',
   expanded: true,
   items: [
-    { name: 'Enter Charges', icon: 'FileTextIcon' },
+    { name: 'Enter Charges', icon: 'FileTextIcon', to: '/CreditCard' },
     null,
     { name: 'Pay Card', icon: 'FileTextIcon' },
     null,

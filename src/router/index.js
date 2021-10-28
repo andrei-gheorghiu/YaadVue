@@ -195,6 +195,12 @@ const routes = [
     icon: 'SettingsIcon'
   },
   {
+    path: '/creditcard',
+    name: 'CreditCard',
+    component: () => import(/* webpackChunkName: "chartofaccounts" */ '../views/CreditCard.vue'),
+    icon: 'SettingsIcon'
+  },
+  {
     path: '/enterbills',
     name: 'EnterBills',
     component: () => import(/* webpackChunkName: "chartofaccounts" */ '../views/EnterBills.vue'),
