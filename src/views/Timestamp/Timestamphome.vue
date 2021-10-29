@@ -1,9 +1,12 @@
 <template>
 <div>
-    <b-row>
-        <b-col class="border"></b-col>
-    <b-col cols="4" class="border">
-       <b-row  class="mb-2 mt-4" >
+    <b-row  class="border" align-v="center">
+        <b-col>
+          <div class="mt-4 text-center"><h1>{{timeString}}</h1></div>
+        <div class="text-center" style="font-size:55px"><b>{{timeclock}}</b></div>
+        </b-col>
+    <b-col cols="4" class="border-left">
+       <b-row   class="mb-2 mt-4" >
                                <b-col   style="font-size: 1.25rem; height:50px" class="bg-light border shadow text-center ml-5 mb-3" md="9" >
                                   <div class="display">{{current || 'Enter Employee Pin'}}</div>
                                </b-col>
@@ -47,6 +50,10 @@
 export default {
   name: 'TimeStampHome.vue',
   data: () => ({
+    timeString: '',
+    timeclock: '',
+    stopClock: false,
+
     list: [
       [
         { paynum: '1', type: 'number', number: '1' },
@@ -69,6 +76,28 @@ export default {
         { paynum: 'X', type: 'text', number: 'clear' }
       ]
     ]
-  })
+  }),
+  mounted () {
+    this.nowTime();
+    this.nowclock();
+  },
+  methods: {
+    nowTime () {
+      this.timeString = new Date(Date.now()).toLocaleDateString('en-US',
+        { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+      if (!this.stopClock) {
+        setTimeout(this.nowTime, 285);
+      }
+    },
+    nowclock () {
+      this.timeclock = new Date(Date.now()).toLocaleTimeString('en-US');
+      if (!this.stopClock) {
+        setTimeout(this.nowclock, 285);
+      }
+    }
+  },
+  beforeDestroy () {
+    this.stopClock = true;
+  }
 };
 </script>

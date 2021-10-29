@@ -11,6 +11,6 @@ export default {
     null,
     { name: 'Open Cash Draw', icon: 'InboxIcon' },
     null,
-    { name: 'Settings', icon: 'ToolIcon' }
+    { name: 'Settings', icon: 'ToolIcon', modalTarget: 'OverridepriceModal' }
   ]
 };

@@ -36,6 +36,7 @@
        <template-modal/>
        <endofday-modal/>
        <return-properties/>
+       <overrideprice-modal/>
 
   </div>
 </template>
@@ -67,9 +68,10 @@ import WsNewEntity from './components/WsNewEntity.vue';
 import TemplateModal from './components/TemplateModal';
 import EndofdayModal from './components/EndofdayModal.vue';
 import ReturnProperties from './components/ReturnProperties.vue';
+import OverridepriceModal from './components/OverridepriceModal.vue';
 
 export default {
-  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee, UserlogoutModal, UserlockModal, OverrideModal, EmploymentStatus, WsNewEntity, TemplateModal, EndofdayModal, ReturnProperties }
+  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee, UserlogoutModal, UserlockModal, OverrideModal, EmploymentStatus, WsNewEntity, TemplateModal, EndofdayModal, ReturnProperties, OverridepriceModal }
 };
 </script>,
     ChangeDue
