@@ -3,6 +3,9 @@
     <b-container class="Inventory Header">
       <b-row>
         <b-col><h1>Inventory</h1></b-col>
+        <b-col cols="-1">
+    <inventory-filter-button/>
+        </b-col>
         <b-col class="text-right">
           <div>
             <b-button v-b-toggle.sidebar-right class="mr-1" variant="secondary">
@@ -24,8 +27,10 @@
           </div>
         </b-col>
         <b-col class="text-right">
+
           <div>
-            <dropdown-bar-item v-for="(dd, key) in dropdownBar"
+
+          <dropdown-bar-item v-for="(dd, key) in dropdownBar"
                                v-bind="dd"
                                :key="key"/>
           </div>
@@ -36,8 +41,12 @@
     <b-row>
       <!----Items count --->
       <b-col cols="2" style="color:red"><h6><i>Total Item(s)</i></h6></b-col>
-      <b-col cols="3" class=" mx-2 text-left"><b>{{ filteredData.length }}</b></b-col>
-          <b-col  class=" mx-2 text-right"><b-form-checkbox v-model="checked"  name="Customercheck-button"  switch>
+      <b-col cols="2" class=" mx-2 text-left"><b>{{ filteredData.length }}</b></b-col>
+      <b-col class="mr-1  text-right">
+
+        </b-col>
+          <b-col cols="1" class="text-left">
+                    <b-form-checkbox v-model="checked"  name="Customercheck-button"  switch>
             </b-form-checkbox></b-col>
 
     </b-row>
@@ -74,13 +83,15 @@ import userDropdown from '@/util/userDropdown';
 import invDnaDropdown from '@/util/invDnaDropdown';
 import invRecDropdown from '@/util/invRecDropdown';
 import AddInventoryItem from '../components/AddInventoryItem';
+import InventoryFilterButton from '../components/InventoryFilterButton';
 
 export default {
   name: 'Inventory',
   components: {
     FeatherIcon,
     DropdownBarItem,
-    AddInventoryItem
+    AddInventoryItem,
+    InventoryFilterButton
   },
   data: () => ({
     inventory,
@@ -126,6 +137,9 @@ export default {
   pointer-events: none;
   width: 100%;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, .1), 0 0 1px 0 rgba(0, 0, 0, .07), 0 1px 1px -1px rgba(0, 0, 0, .06);
+}
+    .dropdown-toggle::after {
+    display: none;
 }
 
 .ps__rail-y {
