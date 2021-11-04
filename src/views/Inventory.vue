@@ -62,6 +62,7 @@
         </b-table>
       </perfect-scrollbar>
     </div>
+    <!------
     <div class="row">
       <div class="col px-md-5 text-center">
         <div class="p-3 border bg-light"><b>Total Items 100</b></div>
@@ -69,7 +70,7 @@
       <div class="col px-md-5 text-center">
         <div class="p-3 border bg-light"><b>Total Cost $10,000</b></div>
       </div>
-    </div>
+    </div> -->
 
   </div>
 </template>

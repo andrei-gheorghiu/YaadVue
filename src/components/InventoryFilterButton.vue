@@ -1,6 +1,6 @@
 <template>
 <div class="inventory-filter-button">
-                    <b-dropdown id=InventoryFilterButton variant="transparent"  text="Split Link"  :right="right">
+                    <b-dropdown id=InventoryFilterButton variant="transparent"  text="Split Link" checkbox-menu allow-focus :right="right">
         <template #button-content>
         <span>
           <font-awesome-icon size="1x" :icon="['fas', 'filter']"/>
