@@ -1,5 +1,5 @@
 export default {
-  name: 'Accounting',
+  name: 'General Ledger',
   icon: 'BookIcon',
   expanded: true,
   items: [

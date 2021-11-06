@@ -6,34 +6,37 @@
           <font-awesome-icon size="1x" :icon="['fas', 'filter']"/>
                   </span>
       </template>
-    <b-dropdown-item>    <b-form-checkbox
+      <b-form-checkbox class="ml-3"
       id="checkbox-1"
       v-model="status"
       name="checkbox-1"
       value="accepted"
       unchecked-value="not_accepted"
-    >All </b-form-checkbox></b-dropdown-item>
-       <b-dropdown-item>    <b-form-checkbox
-      id="checkbox-1"
+    >All </b-form-checkbox>
+        <b-form-checkbox
+        class="ml-3"
+      id="checkbox-2"
       v-model="status"
-      name="checkbox-1"
+      name="checkbox-2"
       value="accepted"
       unchecked-value="not_accepted"
-    >Department </b-form-checkbox></b-dropdown-item>
-       <b-dropdown-item>    <b-form-checkbox
-      id="checkbox-1"
+    >Department </b-form-checkbox>
+       <b-form-checkbox
+       class="ml-3"
+      id="checkbox-3"
       v-model="status"
-      name="checkbox-1"
+      name="checkbox-3"
       value="accepted"
       unchecked-value="not_accepted"
-    >Location </b-form-checkbox></b-dropdown-item>
-           <b-dropdown-item>    <b-form-checkbox
-      id="checkbox-1"
+    >Location </b-form-checkbox>
+         <b-form-checkbox
+         class="ml-3"
+      id="checkbox-4"
       v-model="status"
-      name="checkbox-1"
+      name="checkbox-4"
       value="accepted"
       unchecked-value="not_accepted"
-    >Custom </b-form-checkbox></b-dropdown-item>
+    >Custom </b-form-checkbox>
   </b-dropdown>
 </div>
        </template>

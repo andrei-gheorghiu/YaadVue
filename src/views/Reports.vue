@@ -6,11 +6,11 @@
           <div class="d-flex justify-content-between">
             <h1>Report</h1>
             <div class="text-right">
-              <b-button-group>
+             <!--- <b-button-group>
                 <b-button variant="outline-secondary">Share</b-button>
                 <b-button class="mr-2" variant="outline-secondary">Export</b-button>
               </b-button-group>
-              <!----Drop Down Top------>
+              Drop Down Top------>
               <dropdown-bar-item v-for="(dd, key) in dropdownBar"
                                  v-bind="dd"
                                  :key="key"/>
@@ -32,6 +32,8 @@ import repEmpDropdown from '@/util/repEmpDropdown';
 import repInvDropdown from '@/util/repInvDropdown';
 import repCusDropdown from '@/util/repCusDropdown';
 import repDnaDropdown from '@/util/repDnaDropdown';
+import repPurchaseDropdown from '@/util/repPurchaseDropdown';
+import repPayableDropdown from '@/util/repPayableDropdown';
 import userDropdown from '@/util/userDropdown';
 import DropdownBarItem from '@/components/DropdownBarItem.vue';
 
@@ -39,7 +41,7 @@ export default {
   components: { DropdownBarItem },
   data: () => ({
     dropdownBar: []
-      .concat(repAccDropdown, repSalDropdown, repInvDropdown, repEmpDropdown, repCusDropdown, repDnaDropdown, userDropdown)
+      .concat(repSalDropdown, repPurchaseDropdown, repInvDropdown, repEmpDropdown, repCusDropdown, repPayableDropdown, repAccDropdown, repDnaDropdown, userDropdown)
   })
 };
 </script>

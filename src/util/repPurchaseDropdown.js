@@ -1,6 +1,6 @@
 export default {
-  name: 'Receivables',
-  icon: 'BookIcon',
+  name: 'Purchase',
+  icon: 'TagIcon',
   expanded: true,
   items: [
     { name: 'Financial Reports', icon: 'FileTextIcon' },
