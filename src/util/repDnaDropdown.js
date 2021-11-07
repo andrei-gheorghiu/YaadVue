@@ -12,6 +12,6 @@ export default {
     null,
     { name: 'Bank', icon: 'ActivityIcon' },
     null,
-    { name: 'Taxes', icon: 'ToolIcon' }
+    { name: 'Asset Register', icon: 'ToolIcon' }
   ]
 };

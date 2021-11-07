@@ -3,15 +3,21 @@ export default {
   icon: 'BookIcon',
   expanded: true,
   items: [
-    { name: 'Financial Reports', icon: 'FileTextIcon' },
-    { name: 'Ledger Report', icon: 'FileTextIcon' },
-    { name: 'Journal Report', icon: 'InboxIcon' },
+    { name: 'General Ledger', icon: 'FileTextIcon' },
+    { name: 'Trial Balance', icon: 'FileTextIcon' },
+    { name: 'Balance Sheet', icon: 'FileTextIcon' },
+    { name: 'Tax Reports', icon: 'FileTextIcon' },
     null,
-    { name: 'Receivables Report', icon: 'ClipboardIcon' },
-    { name: 'Payables Report', icon: 'ClipboardIcon' },
+    { name: 'Income and Expenditure by Tag', icon: 'FileTextIcon' },
+    { name: 'Profit and Loss Statment', icon: 'FileTextIcon' },
+    { name: 'Account Listing', icon: 'FileTextIcon' },
+    { name: 'Account Inquiry', icon: 'FileTextIcon' },
     null,
-    { name: 'Bank', icon: 'ActivityIcon' },
+    { name: 'Cheque Payment Listing', icon: 'FileTextIcon' },
+    { name: 'Daily Bank Transaction', icon: 'FileTextIcon' },
+    { name: 'Bank Account Reconciliation Statement', icon: 'FileTextIcon' },
+    { name: 'Missing Cheques Report', icon: 'FileTextIcon' },
     null,
-    { name: 'Taxes', icon: 'ToolIcon' }
+    { name: 'Audit Trail', icon: 'FileTextIcon' }
   ]
 };

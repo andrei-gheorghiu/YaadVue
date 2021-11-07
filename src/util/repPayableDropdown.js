@@ -1,17 +1,15 @@
 export default {
   name: 'Payables',
-  icon: 'TagIcon',
+  icon: 'FileTextIcon',
   expanded: true,
   items: [
-    { name: 'Financial Reports', icon: 'FileTextIcon' },
-    { name: 'Ledger Report', icon: 'FileTextIcon' },
-    { name: 'Journal Report', icon: 'InboxIcon' },
-    null,
-    { name: 'Receivables Report', icon: 'ClipboardIcon' },
-    { name: 'Payables Report', icon: 'ClipboardIcon' },
-    null,
-    { name: 'Bank', icon: 'ActivityIcon' },
-    null,
-    { name: 'Taxes', icon: 'ToolIcon' }
+    { name: 'Aged Supplier', icon: 'FileTextIcon' },
+    { name: 'Purchase Analysis', icon: 'FileTextIcon' },
+    { name: 'Remittance Advices', icon: 'FileTextIcon' },
+    { name: 'OutStanding GRNs', icon: 'FileTextIcon' },
+    { name: 'Creditors Balance', icon: 'FileTextIcon' },
+    { name: 'Vendor Daily Transactions', icon: 'FileTextIcon' },
+    { name: 'Vendor Transaction Listing', icon: 'FileTextIcon' },
+    { name: 'Supplier Transaction Inquires', icon: 'FileTextIcon' }
   ]
 };
