@@ -3,7 +3,7 @@ export default {
   icon: 'UsersIcon',
   expanded: true,
   items: [
-    { name: 'Financial Reports', icon: 'FileTextIcon' },
+    { name: 'Time Sheet', icon: 'FileTextIcon' },
     { name: 'Ledger Report', icon: 'FileTextIcon' },
     { name: 'Journal Report', icon: 'InboxIcon' },
     null,

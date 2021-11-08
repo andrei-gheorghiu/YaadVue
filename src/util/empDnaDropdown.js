@@ -3,7 +3,7 @@ export default {
   icon: 'CropIcon',
   expanded: true,
   items: [
-    { name: 'Scheduling', icon: 'CalendarIcon' },
+    { name: 'Scheduling', icon: 'CalendarIcon' }, // availability
     { name: 'Task', icon: 'LayersIcon' },
     null,
     { name: 'Time Sheet', icon: 'WatchIcon' },
