@@ -85,7 +85,7 @@
         </b-col>
        </b-row>
        <div class="border-top mb-2"/>
-  <router-view></router-view>
+  <router-view><div></div></router-view>
   </div>
 </template>
 <script>
