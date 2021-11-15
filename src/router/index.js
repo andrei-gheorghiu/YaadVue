@@ -64,6 +64,13 @@ const routes = [
         props: true,
         component: () =>
           import(/* webpackChunkName: "target" */ '../views/Reports/Reportshome.vue')
+      },
+      {
+        path: '/reports/view',
+        name: 'ReportsView',
+        props: true,
+        component: () =>
+          import(/* webpackChunkName: "target" */ '../views/Reports/View.vue')
       }
     ],
     icon: 'BarChart2Icon'

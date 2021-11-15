@@ -23,7 +23,7 @@
             <b-row class="mb-2">
          <!-----breadgrumps-->
          <b-col class="ml-2">
-            <b-btn class="sm" variant="trasparent" > <b-icon icon="house-fill" scale="1.25" shift-v="1.25" aria-hidden="true"></b-icon> Home
+            <b-btn @click="$router.push('/reports')"  class="sm" variant="trasparent" > <b-icon icon="house-fill" scale="1.25" shift-v="1.25" aria-hidden="true"></b-icon> Home
             </b-btn></b-col>
             <b-col cols="-2" class="text-right">
               Date

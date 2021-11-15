@@ -3,7 +3,7 @@ export default {
   icon: 'TagIcon',
   expanded: true,
   items: [
-    { name: 'Sales Journal', icon: 'FileTextIcon' },
+    { name: 'Sales Journal', icon: 'FileTextIcon', to: '/reports/view' },
     { name: 'Sales Mix', icon: 'FileTextIcon' },
     { name: 'Other POS Reports', icon: 'FileTextIcon' }, // Comps Details Report
     // Comps Report
