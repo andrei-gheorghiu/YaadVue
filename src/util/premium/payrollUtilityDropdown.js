@@ -7,6 +7,7 @@ export default {
     null,
     { name: 'View', icon: 'FileIcon' },
     null,
+    { name: 'Print', icon: 'FileTextIcon', modalTarget: 'PayrollReport' },
     { name: 'Email Communication', icon: 'FileTextIcon' },
     { name: 'Template', icon: 'FileTextIcon' },
     null,

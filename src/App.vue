@@ -37,6 +37,8 @@
        <endofday-modal/>
        <return-properties/>
        <overrideprice-modal/>
+       <run-payroll-modal/>
+       <payroll-report-modal/>
 
   </div>
 </template>
@@ -69,9 +71,11 @@ import TemplateModal from './components/TemplateModal';
 import EndofdayModal from './components/EndofdayModal.vue';
 import ReturnProperties from './components/ReturnProperties.vue';
 import OverridepriceModal from './components/OverridepriceModal.vue';
+import RunPayrollModal from './components/RunPayrollModal.vue';
+import PayrollReportModal from './components/PayrollReportModal.vue';
 
 export default {
-  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee, UserlogoutModal, UserlockModal, OverrideModal, EmploymentStatus, WsNewEntity, TemplateModal, EndofdayModal, ReturnProperties, OverridepriceModal }
+  components: { EditingModal, TopNavbar, LeftSidebar, BankTransfer, AddRecipe, NewReconciliation, SidebarRight, SaleSwitch, RollForward, NewAdjJournal, ChangeDue, SalaryCalculator, PayrollInputTax, Utility, Ingredients, AddChartAccounts, PayrollYearHoliday, AddEmployee, UserlogoutModal, UserlockModal, OverrideModal, EmploymentStatus, WsNewEntity, TemplateModal, EndofdayModal, ReturnProperties, OverridepriceModal, RunPayrollModal, PayrollReportModal }
 };
 </script>,
     ChangeDue

@@ -3,7 +3,7 @@ export default {
   icon: 'FileIcon',
   expanded: true,
   items: [
-    { name: 'Run Payroll', icon: 'FileIcon' },
+    { name: 'Run Payroll', icon: 'FileIcon', modalTarget: 'RunPayroll' },
     null,
     { name: 'Other Income', icon: 'FileTextIcon', to: '/Payroll/OtherIncome' },
     { name: 'Make Retroactive Pay', icon: 'FileTextIcon' },
