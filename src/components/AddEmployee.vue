@@ -146,7 +146,8 @@
 export default {
   name: 'AddEmployee.vue',
   data: () => ({
-    checked: true
+    checked: true,
+    text: ''
   })
   /**  data () {
     return {

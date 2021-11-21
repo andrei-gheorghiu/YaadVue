@@ -149,6 +149,7 @@ export default {
     Year: '2021',
     value: '',
     context: null,
+    status: [],
     items: [
       { Holiday: 'New Years Day', Date: '' },
       { Holiday: 'Ash Wednesday', Date: '' },

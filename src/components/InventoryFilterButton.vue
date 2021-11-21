@@ -42,7 +42,11 @@
        </template>
 <script>
 export default {
-  name: 'InventoryFilterButton.vue'
+  name: 'InventoryFilterButton.vue',
+  data: () => ({
+    status: [],
+    right: false
+  })
 };
 </script>
 

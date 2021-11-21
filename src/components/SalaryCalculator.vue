@@ -7,14 +7,14 @@
       Calculate:
     </b-col>
     <b-col class="text-center" cols="8">
-            <b-form-radio-group
+      <!--<b-form-radio-group
                id="radio-group-1"
                 v-slot="{ ariaDescribedby }"
         v-model="selected"
         :options="options"
         :aria-describedby="ariaDescribedby"
         name="radio-options"
-      ></b-form-radio-group>
+      ></b-form-radio-group>-->
     </b-col>
   </b-row>
 <b-row class='mb-2'>

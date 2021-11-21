@@ -85,6 +85,7 @@ export default {
   data () {
     return {
       selected: 'first',
+      text: '',
       options: [
         { text: 'Active', value: 'first' },
         { text: 'Inactive', value: 'second' }

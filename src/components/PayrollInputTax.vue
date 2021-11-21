@@ -11,7 +11,6 @@
         id="radio-group-1"
         v-model="selected"
         :options="options"
-        :aria-describedby="ariaDescribedby"
         name="radio-options"
       ></b-form-radio-group>
     </b-col>
@@ -31,6 +30,7 @@ export default {
   name: 'PayrollInputTax',
   data: () => ({
     selected: 'first',
+    filteredData: [],
     options: [
       { text: 'Current', value: 'first' },
       { text: 'Show History', value: 'second' }

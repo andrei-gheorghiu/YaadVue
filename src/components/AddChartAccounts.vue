@@ -58,7 +58,10 @@
 <script>
 
 export default {
-  name: 'AddChartAccounts'
+  name: 'AddChartAccounts',
+  data: () => ({
+    text: ''
+  })
 };
 </script>
 <style scoped>

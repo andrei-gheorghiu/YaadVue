@@ -17,6 +17,11 @@
       </b-row>
     </b-container>
     <div class="border-top"></div>
+    <b-row>
+      <b-col>
+        <pre v-text="recipes"/>
+      </b-col>
+    </b-row>
     <b-row variant="transparent">
       <b-col>
         <router-view></router-view>
@@ -155,6 +160,9 @@
 
       </b-col>
     </b-row>
+    <b-row>
+      <b-input v-model="firstRecipeName" />
+    </b-row>
   </div>
 
 </template>
@@ -169,16 +177,26 @@ export default {
   components: { DropdownBarItem },
   mixins: { DateTime },
   data: () => ({
-    /* fields: initial(Object.keys(sales[0])).concat([{
-      key: 'extPrice',
-      label: 'Ex. Price'
-    }, last(Object.keys(sales[0]))]), */
     fields: [
       'Product', 'QTY', 'Each', 'Total'
     ],
     dropdownBar: [].concat(saleDnaDropdown, userDropdown),
     filteredData: []
   }),
+  computed: {
+    recipes () {
+      // return this.$store.state.recipes.entries;
+      return this.$store.getters['recipes/yourGetter'];
+    },
+    firstRecipeName: {
+      get () {
+        return this.$store.state.recipes.entries[0]?.department || '';
+      },
+      set (val) {
+        this.$store.commit('recipes/ADD_RECIPE', { id: this.$store.state.recipes.entries[0]?.id, department: val });
+      }
+    }
+  },
   methods: {
     formatCurrency
   }

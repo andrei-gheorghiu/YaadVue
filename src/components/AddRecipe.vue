@@ -1,5 +1,9 @@
 <template>
   <b-modal id="AddRecipe" size="lg" centered title="Add Recipe">
+    <template #modal-footer>
+      <b-btn variant="link">Cancel</b-btn>
+      <b-btn variant="primary" @click="addRecipe">Add recipe</b-btn>
+    </template>
     <p class="md-1"><b>Item Name</b>
       <b-input/>
     </p>
@@ -25,38 +29,38 @@
             <b-row class='mb-2'>
               <b-col class='text-right md-2' cols="3"> Department</b-col>
               <b-col cols="6">
-                <b-input/>
+                <b-input v-model="recipe.department"/>
               </b-col>
             </b-row>
             <b-row class='mb-2'>
               <b-col class='text-right' cols="3"> Measure</b-col>
               <b-col cols="6">
-                <b-input/>
+                <b-input v-model="recipe.measure"/>
               </b-col>
             </b-row>
             <b-row class='mb-2'>
               <b-col class='text-right' cols="3"> Price</b-col>
               <b-col cols="6">
-                <b-input/>
+                <b-input v-model="recipe.price" type="number"/>
               </b-col>
             </b-row>
             <b-row class='mb-2'>
               <b-col class='text-right' cols="3"> UPC</b-col>
               <b-col cols="6">
-                <b-input/>
+                <b-input v-model="recipe.upc"/>
               </b-col>
             </b-row>
             <b-row class='mb-4'>
               <b-col class='text-right' cols="3"> Tax</b-col>
               <b-col cols="6">
-                <b-input/>
+                <b-input v-model="recipe.tax" type="number"/>
               </b-col>
             </b-row>
             <a class="border-top"></a>
             <b-row class='mb-1'>
               <b-col class='text-right' cols="4" style="color:red"> Qunatity on Hand</b-col>
               <b-col cols="3">
-                <b-input/>
+                <b-input v-model="recipe.quantity" type="number"/>
                   </b-col>
                                   <b-col class='text-left' style="color:red" cols="1"> Status</b-col>
     <b-col><b-form-checkbox v-model="checked" name="AddInvcheck-button" switch>
@@ -75,7 +79,7 @@
       <b-col class="text-center" cols="2">cost</b-col>
       <b-col class="text-center" cols="2">Ext Cost</b-col>
     </b-row>
-    <b-row v-for="item in createOrder.orderItem" :key="item.id" class="mb-2">
+    <b-row v-for="item in recipe.items" :key="item.id" class="mb-2">
       <b-col class="text-center" cols="5">
         <b-input v-model="item.itemName" :disabled="true" />
       </b-col>
@@ -99,7 +103,7 @@
         ><b>Total Cost</b></b-col
       >
       <b-col class="text-right" cols="3" style="color: red" placeholder="0.00"
-        ><b>${{ createOrder.totalAmountOrderItem }}</b></b-col
+        ><b>${{ totalAmount }}</b></b-col
       >
     </b-row>
         </b-tab>
@@ -145,7 +149,7 @@
                 <b-input/>
               </b-col>
             </b-row>
-                   </b-tab>
+           </b-tab>
 
         <!-----Final Tab tab--->
         <b-tab title="Margins">
@@ -176,6 +180,7 @@
 </template>
 
 <script>
+import { v4 } from 'uuid';
 export default {
   name: 'AddRecipe.vue',
   data: () => ({
@@ -195,9 +200,9 @@ export default {
       }
     ],
     changeQuantity: null,
-    createOrder: {
+    recipe: {
       totalAmountOrderItem: null,
-      orderItem: [
+      items: [
         {
           id: 1,
           itemName: 'Canon lens 20mm',
@@ -233,24 +238,40 @@ export default {
           cost: 60,
           totalAmount: 0
         }
-      ]
+      ],
+      department: '',
+      measure: '',
+      price: 0,
+      upc: '',
+      tax: 15,
+      quantity: 1
     }
   }),
+  computed: {
+    totalAmount () {
+      return this.recipe.items
+        .map(item => (item.quantity * (item.cost || 0)))
+        .reduce((a, b) => a + b);
+    }
+  },
   watch: {},
   methods: {
     loadData () {},
     changedQuantity (item) {
       this.totalAmountItem(item);
     },
-    totalAmountItem (item) {
-      this.createOrder.orderItem.forEach((element) => {
-        if (element.id === item.id) {
-          element.quantity = item.quantity;
-          element.totalAmount = parseFloat(item.quantity) * item.cost;
-          this.createOrder.totalAmountOrderItem += element.totalAmount;
-        }
-      });
+    addRecipe () {
+      this.$store.commit('recipes/ADD_RECIPE', { ...this.recipe, id: v4() });
     }
+    // totalAmount (item) {
+    //   this.order.orderItem.forEach((element) => {
+    //     if (element.id === item.id) {
+    //       element.quantity = item.quantity;
+    //       element.itemCost = parseFloat(item.quantity) * item.cost;
+    //       this.order.totalAmountOrderItem += element.totalAmount;
+    //     }
+    //   });
+    // }
   }
 };
 </script>
