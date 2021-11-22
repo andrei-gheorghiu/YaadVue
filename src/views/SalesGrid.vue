@@ -160,9 +160,9 @@
 
       </b-col>
     </b-row>
-    <b-row>
+  <!---  <b-row>
       <b-input v-model="firstRecipeName" />
-    </b-row>
+    </b-row> -->
   </div>
 
 </template>
@@ -208,10 +208,10 @@ export default {
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
-  height: 395px;
+  height: 360px;
 
   .ps {
-    height: 400px;
+    height: 360px;
   }
 
   th {
