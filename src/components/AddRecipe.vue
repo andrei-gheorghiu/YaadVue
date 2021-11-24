@@ -1,8 +1,12 @@
 <template>
   <b-modal id="AddRecipe" size="lg" centered title="Add Recipe">
     <template #modal-footer>
-      <b-btn variant="link">Cancel</b-btn>
-      <b-btn variant="primary" @click="addRecipe">Add recipe</b-btn>
+
+             <b-btn  variant="primary">Cancel</b-btn>
+
+      <b-btn variant="info" @click="addRecipe">Add & new</b-btn>
+      <b-btn variant="info" @click="addRecipe">Add & close</b-btn>
+
     </template>
     <p class="md-1"><b>Item Name</b>
       <b-input/>

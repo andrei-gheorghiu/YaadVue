@@ -7,13 +7,14 @@
           <h1>Deposit</h1>
           <div>
             <b-button-group>
-              <b-button variant="outline-secondary">Print</b-button>
-              <b-button class="mr-2" variant="outline-secondary">Export</b-button>
+              <b-button size="sm" variant="outline-secondary">Print</b-button>
+              <b-button size="sm" class="mr-3" variant="outline-secondary">Export</b-button>
                          </b-button-group>
-                           <b-button variant="transparent"><feather-icon size="1x" icon="FilePlusIcon" />New</b-button>
-                           <b-button variant="transparent"><feather-icon size="1x" icon="SaveIcon" />Save</b-button>
-                           <b-button variant="transparent"><feather-icon size="1x" icon="DeleteIcon" />Delete</b-button>
-                           <b-button variant="transparent"><feather-icon size="1x" icon="PaperclipIcon" />Attached File</b-button>
+                           <b-button size="sm" variant="transparent"><feather-icon size="1x" icon="FilePlusIcon" />Save & new</b-button>
+                           <b-button size="sm" variant="transparent"><feather-icon size="1x" icon="SaveIcon" />Save</b-button>
+                           <b-button size="sm" variant="transparent"><feather-icon size="1x" icon="DeleteIcon" />Cancel</b-button>
+                           <b-button size="sm" variant="transparent"><feather-icon size="1x" icon="CopyIcon" />Close</b-button>
+                           <b-button size="sm" class="mr-3" variant="transparent"><feather-icon size="1x" icon="PaperclipIcon" />Attached File</b-button>
             <dropdown-bar-item v-for="(dd, key) in dropdownBar"
                                v-bind="dd"
                                :key="key" />
@@ -124,8 +125,8 @@ Date</b>
             <b-col cols="4"><b>Select the payment included in this deposit</b></b-col>
             <b-col class="text-center" cols="2">
                         <b-button-group>
-              <b-button variant="outline-secondary">Select All</b-button>
-              <b-button class="mr-4" variant="outline-secondary">Clear All</b-button>
+              <b-button size="sm" variant="outline-secondary">Select All</b-button>
+              <b-button size="sm" class="mr-4" variant="outline-secondary">Clear All</b-button>
                          </b-button-group>
             </b-col>
              <b-col class="text-right">
@@ -187,6 +188,10 @@ export default {
       icon: 'CropIcon',
       expanded: true,
       items: [
+        { name: 'Duplicate', icon: 'CopyIcon' },
+        { name: 'Reverse', icon: 'FileTextIcon' },
+        { name: 'Void', icon: 'FileTextIcon' },
+        null,
         { name: 'Memorize', icon: 'CpuIcon' },
         { name: 'Template', icon: 'FileTextIcon' },
         null,

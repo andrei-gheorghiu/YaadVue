@@ -10,16 +10,16 @@
 
                 <b-col class="text-right">
                 <b-button-group>
-              <b-button variant="outline-secondary">Mark All</b-button>
-              <b-button class="mr-4" variant="outline-secondary">Unmark All</b-button>
+              <b-button size="sm" variant="outline-secondary">Mark All</b-button>
+              <b-button size="sm" class="mr-4" variant="outline-secondary">Unmark All</b-button>
                          </b-button-group>
-                           <b-button variant="info" class="mr-2 ml-4">Reconcile Now</b-button>
-                           <b-button variant="primary">Leave</b-button>
+                           <b-button size="sm" variant="info" class="mr-2 ml-4">Reconcile Now</b-button>
+                           <b-button size="sm" variant="primary">Leave</b-button>
 
                            </b-col>
 
       <b-col class="text-right" cols="4">
-          <b-button variant="transparent"><feather-icon size="1x" icon="PaperclipIcon" />Attached File</b-button>
+          <b-button size="sm" variant="transparent"><feather-icon size="1x" icon="PaperclipIcon" />Attached File</b-button>
 <dropdown-bar-item v-for="(dd, key) in dropdownBar"
                                v-bind="dd"
                                :key="key" />

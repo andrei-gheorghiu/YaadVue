@@ -3,7 +3,7 @@
   <div class="sales">
     <b-container class="Sales Header">
       <b-row>
-        <b-col><h1>Sales <i>Grid</i></h1></b-col>
+        <b-col><h1>Sales<i><b-btn v-b-tooltip.hover title="Grid" variant="transparent" size="md"><font-awesome-icon  :icon="['fas', 'th']"/></b-btn></i></h1></b-col>
         <b-col class="d-flex align-items-center">
           <span>{{ timeString }}</span>
         </b-col>

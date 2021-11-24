@@ -2,7 +2,7 @@
   <div class="inventory">
     <b-container class="Inventory Header">
       <b-row>
-        <b-col><h1>Inventory</h1></b-col>
+        <b-col cols="2" ><h1>Inventory</h1></b-col>
         <b-col cols="-1">
     <inventory-filter-button/>
         </b-col>
